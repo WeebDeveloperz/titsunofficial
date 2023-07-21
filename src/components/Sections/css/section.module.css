@@ -1,0 +1,33 @@
+.section {
+  background-image: url("/public/images/MM.jpg");
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.sectionWithTitle {
+  width: 100vw;
+  min-height: calc(100vh - var(--section-title-height));
+}
+
+.sectionFlex {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionTitle {
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 9;
+  height: var(--section-title-height);
+  width: 95%;
+  border-radius: 10rem;
+  margin: auto;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

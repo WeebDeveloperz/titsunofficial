@@ -1,0 +1,9 @@
+.flex {
+  width: 100%;
+  margin: 4rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
