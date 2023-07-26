@@ -25,6 +25,16 @@ export function getTest2() {
   ];
 }
 
+export function getTest3() {
+  return [
+    {
+      img: "/images/rah.jpg",
+      title: "",
+      subtitle: "sample content"
+    },
+  ];
+}
+
 export function getDevelopers() {
   return [
     {
@@ -42,13 +52,20 @@ export function getDevelopers() {
   ];
 }
 
-export function getTest3() {
+export function getDownload() {
   return [
     {
-      img: "/images/rah.jpg",
-      title: "",
-      subtitle: "sample content"
+      img: "/images/rahul.webp",
+      imgAlt: "Rahul Goyal(front-end developer)",
+      title: "Rahul Goyal",
+      subtitle: "Developer",
     },
+    {
+      img: "/images/vidhukant.webp",
+      imgAlt: "Vidhu Kant Sharma(back-end developer)",
+      title: "Vidhu Kant sharma",
+      subtitle: "Developer",
+    }
   ];
 }
 

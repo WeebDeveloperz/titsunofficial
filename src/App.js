@@ -29,7 +29,11 @@ function App() {
     }, {
       label: "Login",
       path: "/",
+    },  {
+      label: "Download",
+      path: "/download",
     }
+
   ];
 
   return (
@@ -50,6 +54,7 @@ function App() {
           <Route exact path="/test" element={<HomePage/>}/>
           <Route path="*" element={<h1>404</h1>}/>
           <Route exact path="/Developer" element={<DevelopersPage/>}/>
+          <Route exact path="/Download" element={<Download/>}/>
         </Routes>
       </main>
     </>
