@@ -54,7 +54,7 @@ export default function HomePage() {
         />
 
       <CardsSection
-        title={"Test 3"}
+        title={"Test 2"}
         fgColorTitle="ghostwhite"
         bgColorTitle="black"
         bgImage="linear-gradient(135deg, #949293 0%, #033369 100%)"

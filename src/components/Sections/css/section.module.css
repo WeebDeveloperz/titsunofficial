@@ -22,8 +22,7 @@
   top: var(--nav-height);
   z-index: 9;
   height: var(--section-title-height);
-  width: 95%;
-  border-radius: 10rem;
+  width: 100%;
   margin: auto;
   font-size: 2rem;
   font-weight: bold;

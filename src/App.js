@@ -6,6 +6,7 @@ import Menu from "./components/Menu/Menu";
 
 import HomePage from './views/HomePage';
 import DevelopersPage from "./views/DevelopersPage";
+import DownloadPage from "./views/DownloadPage";
 
 import './App.css';
 
@@ -52,9 +53,9 @@ function App() {
         <Routes>
           <Route exact path="/" element={<HomePage/>}/>
           <Route exact path="/test" element={<HomePage/>}/>
-          <Route path="*" element={<h1>404</h1>}/>
           <Route exact path="/Developer" element={<DevelopersPage/>}/>
-          <Route exact path="/Download" element={<Download/>}/>
+          <Route exact path="/Download" element={<DownloadPage/>}/>
+          <Route path="*" element={<h1>404</h1>}/>
         </Routes>
       </main>
     </>

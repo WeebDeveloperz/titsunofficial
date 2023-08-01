@@ -65,6 +65,12 @@ export function getDownload() {
       imgAlt: "Vidhu Kant Sharma(back-end developer)",
       title: "Vidhu Kant sharma",
       subtitle: "Developer",
+    },
+    {
+      img: "/images/vidhukant.webp",
+      imgAlt: "Vidhu Kant Sharma(back-end developer)",
+      title: "test 2",
+      subtitle: "murkh balak",
     }
   ];
 }
