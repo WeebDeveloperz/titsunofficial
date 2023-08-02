@@ -40,6 +40,7 @@ export default function HomePage() {
               alt={i.imgAlt}
               title={i.goalName}
               subtitle={i.goalRole}
+              to={i.to}
               />
           )
         }

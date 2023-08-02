@@ -16,12 +16,14 @@
 }
 
 .title {
+  background-color: #232627;
   font-size: 3.5rem;
   font-weight: bold;
   text-align: center;
 }
 
 .subtitle {
+  background-color: #232627;
   font-size: 3.5rem;
   text-align: justify;
   white-space: pre-line;

@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
-
 import { getSemester } from "../getters";
-
 import SemesterCard from "../components/Cards/SemesterCard";
 import CardsSection from "../components/Sections/CardsSection";
-
 import styles from "./css/Semesterpage.module.css";
+
 
 export default function SemesterPage() {
   const [semester, setSemester] = useState([]);
