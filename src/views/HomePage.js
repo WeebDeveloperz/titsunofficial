@@ -21,9 +21,10 @@ export default function HomePage() {
   return (
     <>
       <CircularLogoAndText
+        bgColor={"green"}
         title={fpInfo.title}
         subtitle={fpInfo.subtitle}
-        logoPath="/images/p1.jpg"
+        logoPath="/images/rahul.webp"
         logoAlt="test alter"
         />
 

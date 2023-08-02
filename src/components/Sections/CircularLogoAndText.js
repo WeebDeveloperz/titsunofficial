@@ -1,9 +1,13 @@
 import sectionStyles from "./css/section.module.css";
 import styles from "./css/CircularLogoAndText.module.css";
 
-const CircularLogoAndText = ({logoPath, logoAlt, title, subtitle, buttonText, buttonOnClick}) => {
+const CircularLogoAndText = ({logoPath, logoAlt, title, subtitle, buttonText, buttonOnClick, bgColor}) => {
   return (
-    <div className={sectionStyles.sectionFlex}>
+    <div className={sectionStyles.sectionFlex}
+      style={{
+        backgroundColor: bgColor
+      }}
+    >
       <div className={styles.subsection}>
         <div className={styles.text}>
           <div className={styles.title}>
