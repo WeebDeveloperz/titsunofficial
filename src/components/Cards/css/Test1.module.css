@@ -2,15 +2,16 @@
 .card {
   width: 20rem;
   max-width: 95%;
-  height: 20rem;
+  height: 22rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   font-family: poppins;
-  text-align: center;
-  background: linear-gradient(135deg, #949293 0%, #033369 100%);
-  border-radius: 10rem;
+  text-align: center; 
+  /* background: #232627; */
+  background: linear-gradient(135deg, #303335 0%, #141617 100%);
+  border-radius: 10px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s;
   cursor: pointer;
@@ -46,7 +47,7 @@
 }
 
 .img {
-  width: 100%;
+  width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;

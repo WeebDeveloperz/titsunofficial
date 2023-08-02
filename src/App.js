@@ -7,6 +7,7 @@ import Menu from "./components/Menu/Menu";
 import HomePage from './views/HomePage';
 import DevelopersPage from "./views/DevelopersPage";
 import DownloadPage from "./views/DownloadPage";
+import SemesterPage from "./views/SemesterPage";
 
 import './App.css';
 
@@ -28,12 +29,12 @@ function App() {
       label: "Developers",
       path: "/developer",
     }, {
-      label: "Login",
-      path: "/",
-    },  {
       label: "Download",
       path: "/download",
-    }
+    },  {
+      label: "Semester",
+      path: "/semester",
+    },
 
   ];
 
@@ -55,6 +56,7 @@ function App() {
           <Route exact path="/test" element={<HomePage/>}/>
           <Route exact path="/Developer" element={<DevelopersPage/>}/>
           <Route exact path="/Download" element={<DownloadPage/>}/>
+          <Route exact path="/Semester" element={<SemesterPage/>}/>
           <Route path="*" element={<h1>404</h1>}/>
         </Routes>
       </main>

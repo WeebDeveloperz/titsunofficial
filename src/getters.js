@@ -6,32 +6,18 @@
 export function getTest1() {
   return [
     {
-      img: "/images/zt.png",
+      img: "/images/com.jpg",
       imgAlt: "1",
-      goalName: "test 1",
+      goalName: "CSE",
+      goalRole: "",
+    },
+    {
+      img: "/images/ece.webp",
+      imgAlt: "1",
+      goalName: "EC, TT, TC, FE",
       goalRole: "",
     },
     
-  ];
-}
-
-export function getTest2() {
-  return [
-    {
-      title: "Test 2",
-      img: "/images/blast.png",
-      description: "Sample content",
-    },
-  ];
-}
-
-export function getTest3() {
-  return [
-    {
-      img: "/images/rah.jpg",
-      title: "",
-      subtitle: "sample content"
-    },
   ];
 }
 
@@ -74,11 +60,33 @@ export function getDownload() {
     }
   ];
 }
+export function getSemester() {
+  return [
+    {
+      img: "/images/rahul.webp",
+      imgAlt: "sem1",
+      title: "Sem 1",
+      subtitle: "Downloas",
+    },
+    {
+      img: "/images/vidhukant.webp",
+      imgAlt: "sem2",
+      title: "Sem 2",
+      subtitle: "Download",
+    },
+    {
+      img: "/images/rahul.webp",
+      imgAlt: "sem1",
+      title: "Sem 3",
+      subtitle: "Downloas",
+    },
+  ];
+}
 
 export function getFrontpageInfo() {
   return {
-    title: "Heading",
-    subtitle:"-----------------------------------samle space-----------------------------------",
+    title: "Hello",
+    subtitle:"Today's Comment",
     logoPath: "/images/",
   };
 }

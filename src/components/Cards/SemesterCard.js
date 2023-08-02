@@ -1,11 +1,12 @@
-import styles from "./css/Test3.module.css";
 
-const Test3 = ({img, alt, title, subtitle}) => {
+import styles from "./css/SemesterCard.module.css";
+
+export default function SemesterCard({img, alt, title, subtitle}) {
   return (
     <div className={styles.card}>
-      <div className={styles.img}>
+      {/* <div className={styles.img}>
         <img src={img} alt={alt}/>
-      </div>
+      </div> */}
       <div className={styles.textWrapper}>
         <div className={styles.title}>{title}</div>
         <div className={styles.subtitle}>{subtitle}</div>
@@ -13,5 +14,3 @@ const Test3 = ({img, alt, title, subtitle}) => {
     </div>
   );
 }
-
-export default Test3;
