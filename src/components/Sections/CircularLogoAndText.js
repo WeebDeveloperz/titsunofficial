@@ -8,21 +8,21 @@ const CircularLogoAndText = ({logoPath, logoAlt, title, subtitle, buttonText, bu
         backgroundColor: bgColor
       }}
     >
+      <div className={styles.imageWrapper}>
+          <img src={logoPath} alt={logoAlt}/>
+      </div>
+
       <div className={styles.subsection}>
         <div className={styles.text}>
-          <div className={styles.title}>
+          <h1 className={styles.title}>
             {title}
-          </div>
+          </h1>
 
           <hr/>
           <div className={styles.subtitle}>
             {subtitle}
           </div>
           
-        </div>
-
-        <div className={styles.imageWrapper}>
-          <img src={logoPath} alt={logoAlt}/>
         </div>
       </div>
     </div>

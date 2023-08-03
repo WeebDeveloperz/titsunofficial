@@ -15,13 +15,52 @@
   color: white;
 }
 
-.title {
+h1 {
   background-color: #232627;
   font-size: 3.5rem;
   font-weight: bold;
   text-align: center;
 }
 
+h1{
+  font-size: 3.5rem;
+  overflow: hidden;
+  position: relative;
+ }
+h1::after {
+  content: "TITians";
+  display: inline-block;
+  animation: animation 6.5s steps(5) infinite;
+  width: 0ch;
+  color: whitesmoke;
+  opacity: 0.40;
+}
+h1::before {
+  display: inline-block;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  animation: blinking .4s linear alternate infinite;
+}
+@keyframes animation {
+  25% {
+    content: "TITians";
+    width: 6ch;
+  }
+  40% {
+    width: 0ch;
+  }
+  75% {
+    content: "TITians";
+    width: 6ch;
+  }
+  90% {
+    width: 0ch;
+  }
+}
 .subtitle {
   background-color: #232627;
   font-size: 3.5rem;
@@ -30,6 +69,7 @@
 }
 
 .imageWrapper {
+  
   height: 25rem;
   width: 25rem;
 }
@@ -40,30 +80,7 @@
   max-width: 100%;
 }
 
-.buttonContainer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 2rem 0 3rem 0;
-}
 
-.buttonContainer button {
-  width: 9rem;
-  height: 3rem;
-  background-color: #00000000;
-  border: 1px solid ghostwhite;
-  border-radius: 0.2rem;
-  color: ghostwhite;
-  font-size: 1.2rem;
-  transition: background-color 300ms, color 300ms;
-}
-
-.buttonContainer button:hover {
-  color: black;
-  background-color: ghostwhite;
-  transition: background-color 500ms, color 500ms;
-}
 
 @media (max-width: 1281px) {
   .subsection {

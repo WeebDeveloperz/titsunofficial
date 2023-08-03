@@ -10,7 +10,7 @@ export function getTest1() {
       imgAlt: "1",
       goalName: "CSE",
       goalRole: "",
-      to: "/developer"
+      to: "/semester"
     },
     {
       img: "/images/ece.webp",
