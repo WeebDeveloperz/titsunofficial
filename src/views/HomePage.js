@@ -21,7 +21,7 @@ export default function HomePage() {
   return (
     <>
       <CircularLogoAndText
-        bgColor={"black"}
+        bgColor={"#967BB6"}
         title={fpInfo.title}
         subtitle={fpInfo.subtitle}
         logoPath="/images/rahul.webp"
@@ -30,9 +30,9 @@ export default function HomePage() {
 
       <CardsSection
         title={"Notes"}
-        fgColorTitle="#232627"
-        bgColorTitle="ghostwhite"
-        bgImage="linear-gradient(135deg, #000000 0%, #959595 100%)"
+        fgColorTitle="ghostwhite"
+        bgColorTitle="#232627"
+        bgImage="linear-gradient(135deg, #f9feff 0%, #f9f6ee 100%)"
         cards={
           one.map((i, id) =>
             <Test1

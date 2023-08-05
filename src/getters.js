@@ -87,8 +87,8 @@ export function getSemester() {
 
 export function getFrontpageInfo() {
   return {
-    title: "Hello",
-    subtitle:"Today's Comment",
+    title: "Hello ",
+    subtitle:"👈🏻 Today's Comment",
     logoPath: "/images/",
   };
 }

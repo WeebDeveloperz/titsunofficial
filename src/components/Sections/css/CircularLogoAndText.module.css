@@ -7,7 +7,7 @@
 }
 
 .text {
-  color: white;
+  color: whitesmoke;
   width: 45rem;
 }
 
@@ -15,27 +15,25 @@
   color: white;
 }
 
-h1 {
+.title {
   background-color: #232627;
-  font-size: 3.5rem;
-  font-weight: bold;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
-
-h1{
+.title h1{
   font-size: 3.5rem;
   overflow: hidden;
   position: relative;
  }
-h1::after {
+.title h1::after {
   content: "TITians";
   display: inline-block;
   animation: animation 6.5s steps(5) infinite;
   width: 0ch;
   color: whitesmoke;
-  opacity: 0.40;
+  opacity: 0.75;
 }
-h1::before {
+.title h1::before {
   display: inline-block;
   content: "";
   width: 2px;
@@ -64,7 +62,7 @@ h1::before {
 .subtitle {
   background-color: #232627;
   font-size: 3.5rem;
-  text-align: justify;
+  text-align: center;
   white-space: pre-line;
 }
 
@@ -88,7 +86,7 @@ h1::before {
   }
 
   .text {
-    color: white;
+    color: whitesmoke;
     width: 95%;
   }
 
