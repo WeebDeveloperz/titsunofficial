@@ -1,0 +1,36 @@
+.section {
+    background-image: url("/public/images/MM.jpg");
+    width: 100vw;
+    min-height: 100vh;
+  }
+  
+  .sectionWithTitle {
+    width: 100vw;
+    min-height: calc(100vh - var(--section-title-height));
+  }
+  
+  .sectionFlex {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.options {
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 9;
+  height: calc(var(--section-title-height) + 0rem);
+  width: 100%;
+}
+  
+.flex {
+  width: 100%;
+  margin: 4rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 3rem;
+}

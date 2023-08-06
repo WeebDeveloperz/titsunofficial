@@ -32,7 +32,7 @@ export default function HomePage() {
         title={"Notes"}
         fgColorTitle="ghostwhite"
         bgColorTitle="#232627"
-        bgImage="linear-gradient(135deg, #f9feff 0%, #f9f6ee 100%)"
+        bgImage="linear-gradient(135deg, #dfc5fe 0%, #967bb6 100%)"
         cards={
           one.map((i, id) =>
             <Test1

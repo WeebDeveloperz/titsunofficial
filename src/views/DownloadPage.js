@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { getDownload } from "../getters";
 
 import DownloadCard from "./../components/Cards/DownloadCard";
-import CardsSection from "../components/Sections/CardsSection";
+import DownloadSection from "../components/Sections/DownloadSection";
 
 import styles from "./css/DownloadPage.module.css";
 
@@ -16,7 +16,7 @@ export default function DownloadPage() {
 
   return (
     <div className={styles.downloadPage}>
-      <CardsSection
+      <DownloadSection
         title={"Download"}
         cards={
           download.map((i, id) =>
