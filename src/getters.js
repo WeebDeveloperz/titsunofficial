@@ -3,6 +3,9 @@
  * because if you store data on backend
  * this is from where you'll send GET requests
  */
+
+import axios from "axios";
+
 export function getTest1() {
   return [
     {
@@ -40,28 +43,6 @@ export function getDevelopers() {
   ];
 }
 
-export function getDownload() {
-  return [
-    {
-      img: "/images/rahul.webp",
-      imgAlt: "Rahul Goyal(front-end developer)",
-      title: "Rahul Goyal",
-      subtitle: "Developer",
-    },
-    {
-      img: "/images/vidhukant.webp",
-      imgAlt: "Vidhu Kant Sharma(back-end developer)",
-      title: "Vidhu Kant sharma",
-      subtitle: "Developer",
-    },
-    {
-      img: "/images/vidhukant.webp",
-      imgAlt: "Vidhu Kant Sharma(back-end developer)",
-      title: "test 2",
-      subtitle: "murkh balak",
-    }
-  ];
-}
 export function getSemester() {
   return [
     {
@@ -93,3 +74,21 @@ export function getFrontpageInfo() {
   };
 }
 
+export function getSubjectsList(_branch, _semester, ok, err) {
+  axios.get("/api/subjects", {
+    params: {
+      branch: _branch.query,
+      semester: _semester
+    }
+  }).then(_res => ok(_res.data.data))
+    .catch(_err => err(_err));
+}
+
+export function getFilesList(id, ok, err) {
+  axios.get("/api/files", {
+    params: {
+      sub_id: id
+    }
+  }).then(_res => ok(_res.data.data))
+    .catch(_err => err(_err));
+}

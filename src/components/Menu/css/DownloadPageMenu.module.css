@@ -1,0 +1,28 @@
+.menu {
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 9;
+  height: var(--section-title-height);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  color: black;
+}
+
+.branchSelector {
+  width: 100%;
+}
+
+.branch {
+    border: 1px solid green;
+}
+
+.semesterSelector {
+  width: 100%;
+}
+
+.semester {
+    border: 1px solid green;
+}
