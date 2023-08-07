@@ -15,11 +15,11 @@ const DownloadPageMenu = ({ setSubjects }) => {
   ];
 
   const selectedBranchStyle = {
-    backgroundColor: "black"
+    borderBottom: "1px solid black"
   }
 
   const selectedSemesterStyle = {
-    backgroundColor: "black"
+    borderBottom: "1px solid black"
   }
 
   const [selectedBranch, setSelectedBranch] = useState(branches[0]);
