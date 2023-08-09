@@ -7,6 +7,7 @@ import Menu from "./components/Menu/Menu";
 import HomePage from './views/HomePage';
 import DevelopersPage from "./views/DevelopersPage";
 import DownloadPage from "./views/DownloadPage";
+import MoviePage from "./views/MoviePage";
 
 import './App.css';
 
@@ -30,6 +31,9 @@ function App() {
     }, {
       label: "Download",
       path: "/download",
+    }, {
+      label: "Movie",
+      path: "/movie",
     },
   ];
 
@@ -49,8 +53,9 @@ function App() {
         <Routes>
           <Route exact path="/" element={<HomePage/>}/>
           <Route exact path="/test" element={<HomePage/>}/>
-          <Route exact path="/Developer" element={<DevelopersPage/>}/>
-          <Route exact path="/Download" element={<DownloadPage/>}/>
+          <Route exact path="/developer" element={<DevelopersPage/>}/>
+          <Route exact path="/download" element={<DownloadPage/>}/>
+          <Route exact path="/movie" element={<MoviePage/>}/>
           <Route path="*" element={<h1>404</h1>}/>
         </Routes>
       </main>
