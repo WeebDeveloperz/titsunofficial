@@ -33,6 +33,8 @@ const DownloadSection = () => {
             <DownloadCard
               key={i.id}
               onClick={_ => setSelectedSubject(i)}
+              title={i.name}
+              subtitle={i.code}
             />
           )
         }
