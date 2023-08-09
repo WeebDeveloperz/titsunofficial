@@ -1,0 +1,47 @@
+.comment-box {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .comment-box h3 {
+    margin-top: 0;
+  }
+  
+  .comment-box input[type="text"], 
+  .comment-box input[type="number"],
+  .comment-box input[type="email"],
+  .comment-box textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .comment-box button {
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .comment-box button:hover {
+    background-color: #3e8e41;
+  }
+  
+  #comment-list {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
