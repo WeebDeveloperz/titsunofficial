@@ -47,7 +47,6 @@ const DownloadPageMenu = ({ setSubjects }) => {
           </span>
         )}
       </div>
-
       <div className={styles.semesterSelector}>
         {[...Array(8).keys()].map(i => i + 1).map(i =>
           <span

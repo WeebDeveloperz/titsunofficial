@@ -92,3 +92,9 @@ export function getFilesList(id, ok, err) {
   }).then(_res => ok(_res.data.data))
     .catch(_err => err(_err));
 }
+
+export function saveMovie(data, ok, err) {
+  axios.post("/api/movie", data)
+  .then(_res => ok(_res))
+  .catch(_err => err(_err));
+}
