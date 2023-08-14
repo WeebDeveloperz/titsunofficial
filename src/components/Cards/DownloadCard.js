@@ -1,9 +1,9 @@
 
 import styles from "./css/DownloadCard.module.css";
 
-const DownloadCard = ({img, alt, title, subtitle}) => {
+const DownloadCard = ({img, alt, title, subtitle, onClick}) => {
   return (
-    <div className={styles.card}>
+    <div className={styles.card} onClick={onClick}>
       <div className={styles.img}>
         <img src={img} alt={alt}/>
       </div>

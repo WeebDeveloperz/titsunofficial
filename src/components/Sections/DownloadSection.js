@@ -12,6 +12,7 @@ const DownloadSection = () => {
   const [files, setFiles] = useState([]);
   const [subjects, setSubjects] = useState([]);
   const [selectedSubject, setSelectedSubject] = useState(null);
+  const [showWindow, setShowWindow] = useState(false);
 
   const handleSubjectsUpdate = useCallback(x => {
     setSubjects(x)
@@ -25,6 +26,15 @@ const DownloadSection = () => {
     }
   }, [selectedSubject, setFiles]);
 
+  const handleWindowClose = _ => {
+    setShowWindow(false);
+  }
+
+  const handleSubjectSelect = x => {
+    setSelectedSubject(x);
+    setShowWindow(true);
+  }
+
   return (
     <div>
       <DownloadPageMenu setSubjects={handleSubjectsUpdate}/>
@@ -33,23 +43,26 @@ const DownloadSection = () => {
         {
           subjects.map(i =>
             <DownloadCard
+              onClick={_ => handleSubjectSelect(i)}
               key={i.id}
-              onClick={_ => setSelectedSubject(i)}
               title={i.name}
               subtitle={i.code}
             />
           )
         }
 
-        <Window>
-          <h1>Hello World</h1>
-        </Window>
-        {
-        //  files.map(i =>
-        //    <div key={i.id}>
-        //      {i.name}
-        //    </div>
-        //  )
+        {showWindow &&
+          <Window close={handleWindowClose}>
+            <div className={styles.filesPopup}>
+              <div className={styles.filesGrid}>
+                {files.map(i =>
+                  <a key={i.id} className={styles.file} href={`https://apitesting.mikunonaka.net/pub/notes/${i.path}`} download>
+                    {i.name}
+                  </a>
+                )}
+              </div>
+            </div>
+          </Window>
         }
       </div>
     </div>
