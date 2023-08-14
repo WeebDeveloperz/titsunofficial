@@ -13,14 +13,14 @@ export function getTest1() {
       imgAlt: "1",
       goalName: "CSE",
       goalRole: "",
-      to: "/semester"
+      to: "/download"
     },
     {
       img: "/images/ece.webp",
       imgAlt: "1",
       goalName: "EC, TT, TC, FE",
       goalRole: "",
-      to: "/"
+      to: "/download"
     },
     
   ];

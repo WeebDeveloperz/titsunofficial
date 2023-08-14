@@ -21,7 +21,7 @@ export default function HomePage() {
   return (
     <>
       <CircularLogoAndText
-        bgColor={"grey"}
+        bgColor={"#6c767c"}
         title={fpInfo.title}
         subtitle={fpInfo.subtitle}
         logoPath="https://apitesting.mikunonaka.net/pub/index.webp"
@@ -32,7 +32,7 @@ export default function HomePage() {
         title={"Notes"}
         fgColorTitle="ghostwhite"
         bgColorTitle="#232627"
-        bgImage="linear-gradient(135deg, grey 0%, #242424 100%)"
+        bgImage="linear-gradient(135deg, #b2bcc2 0%, #6c767c 100%)"
         cards={
           one.map((i, id) =>
             <Test1
