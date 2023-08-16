@@ -44,6 +44,7 @@ const DownloadSection = () => {
           subjects.map(i =>
             <DownloadCard
               onClick={_ => handleSubjectSelect(i)}
+              img={i.path}
               key={i.id}
               title={i.name}
               subtitle={i.code}

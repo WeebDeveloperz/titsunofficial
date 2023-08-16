@@ -2,8 +2,12 @@
 import styles from "./css/DownloadCard.module.css";
 
 const DownloadCard = ({img, alt, title, subtitle, onClick}) => {
+  const imgStyle = {
+    backgroundImage: `url(${img})`,
+  }
+
   return (
-    <div className={styles.card} onClick={onClick}>
+    <div className={styles.card} style={imgStyle} onClick={onClick}>
       <div className={styles.img}>
         <img src={img} alt={alt}/>
       </div>
