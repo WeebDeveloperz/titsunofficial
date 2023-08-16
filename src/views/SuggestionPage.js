@@ -1,22 +1,22 @@
 import { useState } from "react";
-import styles from "./css/Movie.module.css";
-import { saveMovie } from "./../getters";
+import styles from "./css/SuggestionPage.module.css";
+//import { saveSuggestion } from "../getters";
 
-class Movie {
+class Suggestion {
   constructor() {
-    this.movie_title = "";
+    this.text = "";
     this.submitter_name = "";
     this.submitter_college_id = "";
   }
 }
 
-export default function MoviePage() {
-  const [movie, setMovie] = useState(new Movie());
+export default function SuggestionPage() {
+  const [suggestion, setSuggestion] = useState(new Suggestion());
 
   const handleSubmit = e => {
     e.preventDefault();
-
-    saveMovie(movie,
+/*
+    saveSuggestion(suggestion,
       data => {
         console.log(data);
         alert("thank you for your suggestion")
@@ -25,33 +25,33 @@ export default function MoviePage() {
         console.log(err)
         alert("an error occoured")
       }
-    );
+    );*/
   }
 
   return(
-    <div className={styles.moviePage}>
+    <div className={styles.page}>
       <form onSubmit={handleSubmit}>
         <label>
           Name:
           <input 
-            value={movie.submitter_name}
-            onChange={e => setMovie(i => ({...i, "submitter_name": e.target.value}))}
+            value={suggestion.submitter_name}
+            onChange={e => setSuggestion(i => ({...i, "submitter_name": e.target.value}))}
           />
         </label>
 
         <label>
           College ID:
           <input 
-            value={movie.submitter_college_id}
-            onChange={e => setMovie(i => ({...i, "submitter_college_id": e.target.value}))}
+            value={suggestion.submitter_college_id}
+            onChange={e => setSuggestion(i => ({...i, "submitter_college_id": e.target.value}))}
           />
         </label>
 
         <label>
-          Movie suggestion:          
+          Suggestion:          
           <input 
-            value={movie.movie_title}
-            onChange={e => setMovie(i => ({...i, "movie_title": e.target.value}))}
+            value={suggestion.text}
+            onChange={e => setSuggestion(i => ({...i, "text": e.target.value}))}
           />
         </label>
         <div className={styles.buttonWrapper}>

@@ -93,8 +93,8 @@ export function getFilesList(id, ok, err) {
     .catch(_err => err(_err));
 }
 
-export function saveMovie(data, ok, err) {
-  axios.post("/api/movie", data)
+export function saveSuggestion(data, ok, err) {
+  axios.post("/api/suggestion", data)
   .then(_res => ok(_res))
   .catch(_err => err(_err));
 }

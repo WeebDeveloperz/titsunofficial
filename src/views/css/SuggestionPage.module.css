@@ -1,4 +1,4 @@
-.moviePage {
+.page {
   height: calc(100vh - var(--nav-height));
   display: flex;
   justify-content: center;
@@ -6,13 +6,13 @@
   color: white;
 }
 
-.moviePage form {
+.page form {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
 
-.moviePage form label, .buttonWrapper {
+.page form label, .buttonWrapper {
   width: 20rem;
   display: flex;
   flex-direction: row;

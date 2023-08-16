@@ -7,7 +7,7 @@ import Menu from "./components/Menu/Menu";
 import HomePage from './views/HomePage';
 import DevelopersPage from "./views/DevelopersPage";
 import DownloadPage from "./views/DownloadPage";
-import MoviePage from "./views/MoviePage";
+import SuggestionPage from "./views/SuggestionPage";
 
 import './App.css';
 
@@ -32,8 +32,8 @@ function App() {
       label: "Download",
       path: "/download",
     }, {
-      label: "Movie",
-      path: "/movie",
+      label: "Suggestions",
+      path: "/suggestions",
     },
   ];
 
@@ -55,7 +55,7 @@ function App() {
           <Route exact path="/test" element={<HomePage/>}/>
           <Route exact path="/developer" element={<DevelopersPage/>}/>
           <Route exact path="/download" element={<DownloadPage/>}/>
-          <Route exact path="/movie" element={<MoviePage/>}/>
+          <Route exact path="/suggestions" element={<SuggestionPage/>}/>
           <Route path="*" element={<h1>404</h1>}/>
         </Routes>
       </main>

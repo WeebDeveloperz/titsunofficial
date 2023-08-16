@@ -36,7 +36,7 @@ const DownloadSection = () => {
   }
 
   return (
-    <div>
+    <div className={styles.section}>
       <DownloadPageMenu setSubjects={handleSubjectsUpdate}/>
 
       <div className={styles.flex}>
